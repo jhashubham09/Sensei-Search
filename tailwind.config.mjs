@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.mjs
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
+        primary: "rgb(var(--bg-primary))",
+        secondary: "rgb(var(--bg-secondary))",
+        'text-primary': "rgb(var(--text-primary))",
+        'text-secondary': "rgb(var(--text-secondary))",
       },
     },
   },
